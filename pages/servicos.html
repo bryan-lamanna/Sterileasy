@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="page-transition" class="page-transition" style="opacity: 0;">
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <!-- Logo + Nome -->
+            <a class="navbar-brand" href="/index.html">
+              <i class="fas fa-stethoscope me-2"></i>
+              SterilEasy
+            </a>
+      
+            <!-- Botão Mobile (aparece em telas pequenas) -->
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Itens do Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-index" href="/index.html">Home</a>
+                </li>
+                
+                <!-- Dropdown de Serviços -->
+                <li class="nav-item">
+                  <a class="nav-link nav-servicos" href="/pages/servicos.html">Serviços</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link nav-sobre" href="/pages/sobre.html">Sobre Nós</a>
+                </li>
+                
+                <!-- Ícone de Contato (visível em desktop) -->
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link nav-contato" href="/pages/contato.html">
+                    Contato
+                  </a>
+                </li>
+              </ul>
+      
+              <!-- Botão de WhatsApp (mobile) -->
+              <a 
+                href="https://wa.me/5511999999999" 
+                class="btn btn-success ms-lg-3 d-lg-none"
+              >
+                <i class="fab fa-whatsapp me-1"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+        <!-- Hero Section -->
+        <section class="hero-services">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-8 mx-auto text-center reveal-bottom">
+                      <h1 class="display-4 fw-bold mb-4">Nossos Serviços</h1>
+                      <p class="lead mb-4">Soluções personalizadas para impulsionar seu negócio</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Destaque de Serviços -->
+      <section class="py-5 my-5">
+          <div class="container">
+              <div class="row g-4">
+                  <div class="col-md-4 reveal-left">
+                      <div class="card service-card h-100">
+                          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                               class="card-img-top" 
+                               alt="Desenvolvimento Web">
+                          <div class="card-body">
+                              <div class="service-icon">
+                                  <i class="fas fa-code"></i>
+                              </div>
+                              <h3 class="h4">Desenvolvimento Web</h3>
+                              <p class="card-text">Sites responsivos e sistemas web personalizados com as melhores tecnologias do mercado.</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-4 reveal-bottom">
+                      <div class="card service-card h-100">
+                          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                               class="card-img-top" 
+                               alt="Marketing Digital">
+                          <div class="card-body">
+                              <div class="service-icon">
+                                  <i class="fas fa-bullseye"></i>
+                              </div>
+                              <h3 class="h4">Marketing Digital</h3>
+                              <p class="card-text">Estratégias completas para aumentar sua presença online e converter visitantes em clientes.</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-4 reveal-right">
+                      <div class="card service-card h-100">
+                          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" 
+                               class="card-img-top" 
+                               alt="Consultoria">
+                          <div class="card-body">
+                              <div class="service-icon">
+                                  <i class="fas fa-chart-line"></i>
+                              </div>
+                              <h3 class="h4">Consultoria</h3>
+                              <p class="card-text">Análise especializada para identificar oportunidades e otimizar seus resultados.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Accordion de Serviços Detalhados -->
+      <section class="py-5 bg-light">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8 text-center mb-5 reveal-bottom">
+                      <h2 class="display-5 fw-bold">Conheça nossos serviços em detalhes</h2>
+                      <p class="text-muted">Clique em cada serviço para ver mais informações</p>
+                  </div>
+              </div>
+              
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="accordion" id="servicesAccordion">
+                          <!-- Item 1 -->
+                          <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden reveal-left">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed py-3 fw-bold" 
+                                          type="button" 
+                                          data-bs-toggle="collapse" 
+                                          data-bs-target="#service1" 
+                                          aria-expanded="false" 
+                                          aria-controls="service1">
+                                      <i class="fas fa-code me-3"></i> Desenvolvimento Web Completo
+                                  </button>
+                              </h3>
+                              <div id="service1" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                  <div class="accordion-body">
+                                      <p>Oferecemos soluções completas de desenvolvimento web, desde sites institucionais até complexas aplicações web.</p>
+                                      <ul class="mb-3">
+                                          <li>Sites responsivos (mobile-first)</li>
+                                          <li>E-commerce e lojas virtuais</li>
+                                          <li>Sistemas web personalizados</li>
+                                          <li>Landing pages de alta conversão</li>
+                                          <li>Integração com APIs e sistemas</li>
+                                      </ul>
+                                      <p class="mb-0">Tecnologias utilizadas: HTML5, CSS3, JavaScript, React, Vue.js, Node.js, PHP, WordPress e muito mais.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <!-- Item 2 -->
+                          <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden reveal-bottom">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed py-3 fw-bold" 
+                                          type="button" 
+                                          data-bs-toggle="collapse" 
+                                          data-bs-target="#service2" 
+                                          aria-expanded="false" 
+                                          aria-controls="service2">
+                                      <i class="fas fa-bullseye me-3"></i> Marketing Digital Integrado
+                                  </button>
+                              </h3>
+                              <div id="service2" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                  <div class="accordion-body">
+                                      <p>Estratégias completas para aumentar sua presença digital e converter visitantes em clientes.</p>
+                                      <ul class="mb-3">
+                                          <li>Gestão de redes sociais</li>
+                                          <li>Anúncios no Google Ads e Meta Ads</li>
+                                          <li>SEO (Otimização para mecanismos de busca)</li>
+                                          <li>E-mail marketing automatizado</li>
+                                          <li>Produção de conteúdo estratégico</li>
+                                      </ul>
+                                      <p class="mb-0">Relatórios mensais com métricas de desempenho e sugestões de melhoria contínua.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <!-- Item 3 -->
+                          <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden reveal-right">
+                              <h3 class="accordion-header">
+                                  <button class="accordion-button collapsed py-3 fw-bold" 
+                                          type="button" 
+                                          data-bs-toggle="collapse" 
+                                          data-bs-target="#service3" 
+                                          aria-expanded="false" 
+                                          aria-controls="service3">
+                                      <i class="fas fa-chart-line me-3"></i> Consultoria Estratégica
+                                  </button>
+                              </h3>
+                              <div id="service3" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                  <div class="accordion-body">
+                                      <p>Análise especializada para identificar oportunidades e otimizar seus resultados digitais.</p>
+                                      <ul class="mb-3">
+                                          <li>Auditoria digital completa</li>
+                                          <li>Planejamento estratégico</li>
+                                          <li>Análise de concorrência</li>
+                                          <li>Orientação para transformação digital</li>
+                                          <li>Treinamentos especializados</li>
+                                      </ul>
+                                      <p class="mb-0">Metodologia baseada em dados e melhores práticas de mercado para tomada de decisão assertiva.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- CTA com Redes Sociais -->
+      <section class="py-5 my-5">
+          <div class="container">
+              <div class="social-cta p-5">
+                  <div class="row align-items-center">
+                      <div class="col-lg-8 mb-4 mb-lg-0 reveal-left">
+                          <h2 class="fw-bold mb-3">Pronto para começar?</h2>
+                          <p class="lead mb-4">Entre em contato conosco através do WhatsApp ou pelas nossas redes sociais.</p>
+                          <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" 
+                             class="whatsapp-btn">
+                             <i class="fab fa-whatsapp me-2"></i> Conversar pelo WhatsApp
+                          </a>
+                      </div>
+                      <div class="col-lg-4 text-center text-lg-end reveal-right">
+                          <a href="#" class="social-icon bg-facebook">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="#" class="social-icon bg-instagram">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="#" class="social-icon bg-linkedin">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                          <a href="#" class="social-icon bg-twitter">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- ScrollReveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script>
+          // Configuração do ScrollReveal
+          ScrollReveal({ 
+              reset: true,
+              distance: '60px',
+              duration: 1000,
+              delay: 200
+          });
+          
+          // Aplicando animações
+          ScrollReveal().reveal('.reveal-left', { origin: 'left' });
+          ScrollReveal().reveal('.reveal-right', { origin: 'right' });
+          ScrollReveal().reveal('.reveal-bottom', { origin: 'bottom' });
+          ScrollReveal().reveal('.reveal-top', { origin: 'top' });
+          
+          // Efeito de fade-in ao carregar a página
+          document.addEventListener('DOMContentLoaded', function() {
+              document.body.style.opacity = '1';
+          });
+      </script>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Coluna 1: Logo e Slogan -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-4">
+              <i class="fas fa-stethoscope me-2"></i> SterilEasy
+            </h5>
+            <p>Soluções profissionais em esterilização para clínicas e hospitais.</p>
+          </div>
+    
+          <!-- Coluna 2: Links Rápidos -->
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/index.html" class="text-white">Home</a></li>
+              <li class="mb-2"><a href="/pages/servicos.html" class="text-white">Serviços</a></li>
+              <li class="mb-2"><a href="/pages/sobre.html" class="text-white">Sobre Nós</a></li>
+              <li class="mb-2"><a href="/pages/contato.html" class="text-white">Contato</a></li>
+            </ul>
+          </div>
+    
+          <!-- Coluna 3: Contatos -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-4">Contato</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Porto Alegre, RS
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> (51) 99999-9999
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> contato@sterileasy.com.br
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Coluna 4: Redes Sociais -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-4">Redes Sociais</h5>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="mt-4">
+              <a href="pages/contato.html" class="btn btn-outline-light btn-sm">
+                <i class="fas fa-paper-plane me-2"></i> Envie uma Mensagem
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Direitos Autorais -->
+        <div class="row pt-3 border-top">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2025 SterilEasy. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        document.querySelector('.nav-servicos').classList.add('active');
+        
+      })
+   
+    </script>
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>

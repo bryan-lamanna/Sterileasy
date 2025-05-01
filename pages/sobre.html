@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="page-transition" class="page-transition" style="opacity: 0;">
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <!-- Logo + Nome -->
+            <a class="navbar-brand" href="/index.html">
+              <i class="fas fa-stethoscope me-2"></i>
+              SterilEasy
+            </a>
+      
+            <!-- Botão Mobile (aparece em telas pequenas) -->
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Itens do Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-index" href="/index.html">Home</a>
+                </li>
+                
+                <!-- Dropdown de Serviços -->
+                <li class="nav-item">
+                  <a class="nav-link nav-servicos" href="/pages/servicos.html">Serviços</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link nav-sobre" href="/pages/sobre.html">Sobre Nós</a>
+                </li>
+                
+                <!-- Ícone de Contato (visível em desktop) -->
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link nav-contato" href="/pages/contato.html">
+                    Contato
+                  </a>
+                </li>
+              </ul>
+      
+              <!-- Botão de WhatsApp (mobile) -->
+              <a 
+                href="https://wa.me/5511999999999" 
+                class="btn btn-success ms-lg-3 d-lg-none"
+              >
+                <i class="fab fa-whatsapp me-1"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-about">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-8 mx-auto text-center reveal-bottom">
+                  <h1 class="display-4 fw-bold mb-4">Sobre Nós</h1>
+                  <p class="lead mb-4">Conheça nossa história, valores e a equipe por trás do nosso sucesso</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Nossa História -->
+  <section class="py-5">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0 reveal-left">
+                  <h2 class="display-5 fw-bold mb-4">Nossa História</h2>
+                  <p>Fundada em 2010, nossa empresa começou como uma pequena startup com uma grande visão: transformar o mercado digital através de soluções inovadoras e atendimento personalizado.</p>
+                  <p>Hoje, somos referência no setor, com mais de 500 projetos entregues e clientes satisfeitos em todo o país. Nosso crescimento é resultado do trabalho dedicado de nossa equipe e da confiança de nossos clientes.</p>
+                  <p>Acreditamos que a tecnologia deve ser acessível e eficiente, e é isso que nos motiva a criar soluções que realmente fazem a diferença.</p>
+              </div>
+              <div class="col-lg-6 reveal-right">
+                  <div class="about-card">
+                      <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                            alt="Nossa História" 
+                            class="img-fluid w-100">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Linha do Tempo -->
+  <section class="py-5 bg-light">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-8 text-center mb-5 reveal-bottom">
+                  <h2 class="display-5 fw-bold">Nossa Jornada</h2>
+                  <p class="text-muted">Marcos importantes da nossa trajetória</p>
+              </div>
+          </div>
+          
+          <div class="timeline">
+              <!-- Item 1 -->
+              <div class="timeline-item left reveal-left">
+                  <div class="timeline-content">
+                      <h3>2010</h3>
+                      <p>Fundada em um pequeno escritório com apenas 3 colaboradores e o sonho de transformar o mercado digital.</p>
+                  </div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="timeline-item right reveal-right">
+                  <div class="timeline-content">
+                      <h3>2014</h3>
+                      <p>Primeiro grande cliente nacional e expansão da equipe para 15 profissionais especializados.</p>
+                  </div>
+              </div>
+              
+              <!-- Item 3 -->
+              <div class="timeline-item left reveal-left">
+                  <div class="timeline-content">
+                      <h3>2017</h3>
+                      <p>Lançamento de nossa plataforma própria que revolucionou a forma como nossos clientes gerenciam seus projetos.</p>
+                  </div>
+              </div>
+              
+              <!-- Item 4 -->
+              <div class="timeline-item right reveal-right">
+                  <div class="timeline-content">
+                      <h3>2020</h3>
+                      <p>Expansão internacional com clientes em 3 países e reconhecimento como uma das melhores empresas para se trabalhar no setor.</p>
+                  </div>
+              </div>
+              
+              <!-- Item 5 -->
+              <div class="timeline-item left reveal-left">
+                  <div class="timeline-content">
+                      <h3>2023</h3>
+                      <p>Mais de 100 colaboradores e 500 projetos entregues com excelência, consolidando nossa posição no mercado.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Nossos Valores -->
+  <section class="py-5">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-8 text-center mb-5 reveal-bottom">
+                  <h2 class="display-5 fw-bold">Nossos Valores</h2>
+                  <p class="text-muted">Princípios que guiam nosso trabalho diário</p>
+              </div>
+          </div>
+          
+          <div class="row g-4">
+              <div class="col-md-4 reveal-left">
+                  <div class="value-card p-4 h-100">
+                      <div class="value-icon mb-3">
+                          <i class="fas fa-handshake"></i>
+                      </div>
+                      <h3 class="h4">Integridade</h3>
+                      <p>Agimos com ética e transparência em todas as nossas relações, mantendo sempre nossa palavra e compromissos.</p>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 reveal-bottom">
+                  <div class="value-card p-4 h-100">
+                      <div class="value-icon mb-3">
+                          <i class="fas fa-lightbulb"></i>
+                      </div>
+                      <h3 class="h4">Inovação</h3>
+                      <p>Buscamos constantemente novas soluções e melhorias, mantendo-nos à frente das tendências do mercado.</p>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 reveal-right">
+                  <div class="value-card p-4 h-100">
+                      <div class="value-icon mb-3">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <h3 class="h4">Trabalho em Equipe</h3>
+                      <p>Acreditamos que o sucesso é construído coletivamente, valorizando a diversidade e colaboração.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  
+
+  <!-- CTA com Redes Sociais -->
+  <section class="py-5 my-5">
+    <div class="container">
+        <div class="social-cta p-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0 reveal-left">
+                    <h2 class="fw-bold mb-3">Pronto para começar?</h2>
+                    <p class="lead mb-4">Entre em contato conosco através do WhatsApp ou pelas nossas redes sociais.</p>
+                    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" 
+                       class="whatsapp-btn">
+                       <i class="fab fa-whatsapp me-2"></i> Conversar pelo WhatsApp
+                    </a>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end reveal-right">
+                    <a href="#" class="social-icon bg-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon bg-instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon bg-linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon bg-twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+      // Configuração do ScrollReveal
+      ScrollReveal({ 
+          reset: true,
+          distance: '60px',
+          duration: 1000,
+          delay: 200
+      });
+      
+      // Aplicando animações
+      ScrollReveal().reveal('.reveal-left', { origin: 'left' });
+      ScrollReveal().reveal('.reveal-right', { origin: 'right' });
+      ScrollReveal().reveal('.reveal-bottom', { origin: 'bottom' });
+      ScrollReveal().reveal('.reveal-top', { origin: 'top' });
+      ScrollReveal().reveal('.reveal-scale', { scale: 0.85 });
+      
+      // Efeito de fade-in ao carregar a página
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+          document.body.style.opacity = '1';
+
+        })
+      });
+  </script>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Coluna 1: Logo e Slogan -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-4">
+              <i class="fas fa-stethoscope me-2"></i> SterilEasy
+            </h5>
+            <p>Soluções profissionais em esterilização para clínicas e hospitais.</p>
+          </div>
+    
+          <!-- Coluna 2: Links Rápidos -->
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/index.html" class="text-white">Home</a></li>
+              <li class="mb-2"><a href="/pages/servicos.html" class="text-white">Serviços</a></li>
+              <li class="mb-2"><a href="/pages/sobre.html" class="text-white">Sobre Nós</a></li>
+              <li class="mb-2"><a href="/pages/contato.html" class="text-white">Contato</a></li>
+            </ul>
+          </div>
+    
+          <!-- Coluna 3: Contatos -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-4">Contato</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Porto Alegre, RS
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> (51) 99999-9999
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> contato@sterileasy.com.br
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Coluna 4: Redes Sociais -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-4">Redes Sociais</h5>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="mt-4">
+              <a href="pages/contato.html" class="btn btn-outline-light btn-sm">
+                <i class="fas fa-paper-plane me-2"></i> Envie uma Mensagem
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Direitos Autorais -->
+        <div class="row pt-3 border-top">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2025 SterilEasy. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        document.querySelector('.nav-sobre').classList.add('active');
+        
+      })
+   
+    </script>
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
