@@ -326,6 +326,11 @@
   }
 }
 
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
 .social-icon {
     text-decoration: none;
     width: 50px;
@@ -365,7 +370,7 @@
   .hero-section {
     background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
     color: white;
-    padding: 120px 0;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
