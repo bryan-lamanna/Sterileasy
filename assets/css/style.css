@@ -6,6 +6,16 @@
     --light: #cecece;
   }
 
+  .botao-1 {
+    background-color: var(--main) !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+  .botao-2 {
+    border: var(--main) 2px solid !important;
+    color: var(--main) !important;
+    cursor: pointer !important;
+  }
   header .container {
     margin-bottom: 0  ;
   }
