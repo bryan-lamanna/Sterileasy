@@ -100,3 +100,25 @@ function showLoader() {
   document.body.appendChild(loader);
   setTimeout(() => loader.style.transform = 'scaleX(0.8)', 10);
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Fecha o menu quando um item é clicado (para mobile)
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(function(navLink) {
+        navLink.addEventListener('click', function() {
+            if(navbarCollapse.classList.contains('show')) {
+                navbarToggler.click(); // Fecha o menu
+            }
+        });
+    });
+    
+    // Alternar classe 'active' no botão do menu
+    navbarToggler.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+});
