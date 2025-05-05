@@ -505,7 +505,9 @@
     display: inline-block;
     transition: all 0.3s ease;
 }
-
+.navbar-brand img {
+  max-width: 10em !important;
+}
 .whatsapp-btn:hover {
     background-color: #128C7E;
     color: white;
