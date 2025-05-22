@@ -553,8 +553,12 @@
 .img-container {
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1));
     transition: transform 0.3s ease;
+}
+
+.label {
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1));
 }
 
 .img-container:hover {
@@ -760,7 +764,9 @@
   /* Responsivo */
   @media (max-width: 768px) {
 
-  
+    .navbar-brand img {
+      max-width: 7em !important;
+    }
 
     header .container {
       flex-direction: column;
